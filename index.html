@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dis</title>
+    <link rel="stylesheet" href="css/emojis.css">
+</head>
+
+<body>
+
+    <div id="emojis">
+
+    </div>
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+<script src="js/DisMojiPicker.js"></script>
+<script>
+
+
+    $("#emojis").disMojiPicker()
+    $("#emojis").picker(emoji => console.log(emoji));
+    twemoji.parse(document.body);
+
+</script>
+
+</html>
